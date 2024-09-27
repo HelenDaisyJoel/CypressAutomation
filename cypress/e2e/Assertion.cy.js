@@ -12,6 +12,10 @@ describe('example to-do app', () => {
         .should("eq","https://tutorialsninja.com/demo/")
         .should("contains","tutorialsninja");
 
+        cy.title().should("eq","Your Store")
+        .should("include","Store")
+        .should("contains","our");
+
 
     }
     )
